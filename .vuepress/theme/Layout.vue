@@ -4,6 +4,7 @@
     Content
 </template>
 
+<!--
 <script lang="coffee">
 import Vue from 'vue'
 import Buefy from 'buefy'
@@ -16,8 +17,8 @@ export default {
     return foo: 'bar'
 }
 </script>
+-->
 
-<!--
 <script>
 import Vue from 'vue'
 import Buefy from 'buefy'
@@ -33,7 +34,6 @@ export default {
   }
 }
 </script>
--->
 
 <style lang="sass">
 // Import Bulma's core
