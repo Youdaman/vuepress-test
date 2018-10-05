@@ -1,18 +1,17 @@
 <template lang="pug">
-  Content
+  div
+    p Hello {{ name }}!
+    Content
 </template>
 
 <script lang="coffee">
 import Vue from 'vue'
 import Buefy from 'buefy'
 # import 'buefy/dist/buefy.css'
-
 Vue.use(Buefy)
-
-export default {
+export default
   data: ->
-    return name: 'World'
-}
+    name: 'World'
 </script>
 
 <style lang="sass">
