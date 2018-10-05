@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Hello VuePress',
-  description: 'Just playing around'
+  description: 'Just playing around',
   // plugins: [
   //   {
   //     resolve: 'vuepress-plugin-rss',
@@ -11,8 +11,12 @@ module.exports = {
   //     }
   //   }
   // ]
-  // chainWebpack: (config, isServer) => {
-  //   config.plugins.delete('plugin:vue-libs/recommended')
-  //   config.plugins.delete('plugin:jest/recommended')
-  // }
+  chainWebpack: (config, isServer) => {
+    config.module
+    .rule('coffee')
+    .test(/\.coffee$/)
+    .use('coffee-loader')
+      .loader('coffee-loader')
+      .end()
+  }
 }
