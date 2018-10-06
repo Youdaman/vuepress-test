@@ -1,6 +1,8 @@
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
+  // permalink: '/:year/:month/:day/:slug'
+  permalink: '/:slug',
   // plugins: [
   //   {
   //     resolve: 'vuepress-plugin-rss',
